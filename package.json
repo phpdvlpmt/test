@@ -4,7 +4,9 @@
   "description": "Respnsive portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "css-build": "node-sass --omit-source-map-url scss/main.scss dist/css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "author": "User",
   "license": "MIT",
