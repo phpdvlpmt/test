@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Respnsive portfolio website",
   "main": "index.js",
+  "homepage": "https://phpdvlpmt.github.io/test",
   "scripts": {
     "css-build": "node-sass --omit-source-map-url scss/main.scss dist/css/main.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "deploy": "gh-pages -d dist"
   },
   "author": "User",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
